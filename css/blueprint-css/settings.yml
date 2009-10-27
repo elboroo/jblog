@@ -1,0 +1,5 @@
+project1:
+  path: /home/studinf/brozek/rails3/css/blueprint-css/project1/
+  plugins:
+    - fancy-type
+    - buttons

@@ -4,18 +4,18 @@ html {
   /* http://www.hicksdesign.co.uk/journal/forcing-scrollbars-now-even-better */
   height: 100%; 
   margin-bottom: 1px;
-  background-color: #FEFEEB; 
+  background-color: #99CC99; 
   margin: 0 auto 0 44px; 
 }
 
 .site {
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .title {
   position: relative;
   padding: 18px 0 0 0;
-  background-color: #FEFEEB; 
+  background-color: #99CC99; 
 }
 
 .title a {
@@ -24,15 +24,15 @@ html {
   font-size: 100%;
   font-weight: bold;
   font-style: italic;
-  color: #FF2C2B;
+  color: red;
   top: 28px;
   right: 0;
 }
 
 #home, #post {
   padding-top: 22px;
-  border: solid #888;
-  border-width: 1px 0 1px 1px;
+  border: none;
+  border-width: 1px 1 1px 1px;
 }
 
 #home h1 {
@@ -45,11 +45,11 @@ html {
   font-style: italic;
   font-weight: bold;
   margin-bottom: 22px;
-  color: #FF2C2B;
+  color: black;
 }
 
 #post h2, #post h3, #home h1 {
-  color: #489690;
+  color: #007FFF;
 }
 
 #home ul li {
@@ -60,7 +60,10 @@ a[href^="http:"], a[href^="mailto:"], a[href^="http:"]:visited,
 a[href$=".pdf"], a[href$=".doc"], a[href$=".xls"], a[href$=".rss"], 
 a[href$=".rdf"], a[href^="aim:"] {
   padding:2px 16px 2px 0;
+  color: black; /* kolor wszystkich linkow */
 }
+
+p {text-align:justify;}
 
 blockquote {
   font-size: 90%;
@@ -71,7 +74,7 @@ blockquote {
   margin-left: 572px;
   padding: 18px 22px 0 22px;
   position: absolute;
-  background: #F2F1D6;
+  background: #99CC99;
   -moz-border-radius: 4px;  
   color: #800;
 }

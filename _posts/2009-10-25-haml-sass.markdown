@@ -1,0 +1,238 @@
+---
+layout: post
+title:  Haml-sass
+---
+##  HAML - Beautiful HTML
+Tak prezentuje się (mniej więcej) kod w HAML'u  mojej przykładowej stronki dostępnej 
+<a href="/~brozek/rails3/project1.html">tutaj</a>
+
+{% highlight ruby %}
+!!! Strict
+%html{ "xml:lang" => "pl", :lang => "pl-pl", 
+	:xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", 
+	"http-equiv" => "content-type" }
+    %title
+      {{ page.title }}
+    %meta{ :name => "author", :content => "Boguslaw Rozek" }
+    %link{ :href => "http://sigma.inf.ug.edu.pl/~brozek/atom.xml", 
+       :title => "Boguslaw", :rel => "alternate", :type => "application/atom+xml" }
+    %link{ :href => "css/blueprint/screen.css", :rel => "stylesheet", 
+	:type => "text/css", :media => "screen, projection" }
+    %link{ :href => "css/blueprint/ie.css", :rel => "stylesheet", 
+	:type => "text/css", :media => "screen, projection" }
+    %link{ :href => "css/blueprint/print.css", :rel => "stylesheet", 
+	:type => "text/css", :media => "print" }
+  %body
+    
+
+.column.span-3
+  %h1
+    Tyty strony testowej
+.column.span-1
+  .top
+    %a.append-7{ :href => "/~brozek/rails3/" }
+      Do bloga
+.container
+  .column.span-1
+    %h2
+      Kolumna nr 1
+    %ul
+      %li
+        %a{ :href => "" }
+          link nr 1
+      %li
+        %a{ :href => "" }
+          link nr 2
+      %li
+        %a{ :href => "" }
+          link nr 3
+      %li
+        %a{ :href => "" }
+          link nr 4
+    %p
+      Dom ten skada si z samych maych mieszkanek...
+      
+  .column.span-1
+    %h2
+      Kolumna nr 2
+    %p
+      Teraz za po upywie miesica, ju zaczyna patrze...
+  .column.span-1
+    %h2
+      Kolumna nr 3
+    %p
+      Teraz za po upywie miesica, ju zaczyna patrze ...
+ 
+    %fieldset
+      %legend
+        Przykladowy formularz
+      %form{ :action => "project1.html" }
+        %table
+          %tr
+            %td
+              Imie:
+            %td
+              %input{ :type => "text" }
+          %tr
+            %td
+              Nazwisko:
+            %td
+              %input{ :type => "text" }
+        %p
+          %input{ :type => "button", :value => "Reset" }
+          %input{ :type => "button", :value => "Akceptuj" }
+        .notice
+          Nalezy wypelnic wszystkie pola.
+
+{% endhighlight %}
+
+Słowo podsumowania: 
+Jak dla mnie jest to dość ciekawa alternatywa. Odnosze nieodparte wrażenie, że HAML to w praktyce po
+prostu jeden wielki skrót HTML'a. Podstawową zaletą jest fakt, że jest go najzwyczajniej
+w świecie mniej. Jak się dowiedziałem z różnych źródeł, to średnio wychodzi na to, że 
+kod w HAML'u to ok. 40% tego co mamy w HTML'u.Mimo że HAML jest “white space sensitive” to
+wg mnie to żadna wada, ba wręcz zaleta. No i nikogo nie trzeba chyba przekonywać, że brak 
+koniecznośći domykania tagów to dobrodziejstwo, którym HAML nas obdarza...
+
+
+## SASS - Powerful CSS
+Jeden z CSS'ów widniejących w tagach powyżej, dzięki SASS prezentuje się równie elegancko.
+
+{% highlight ruby %}
+
+html, body, div, h1, h2, a, ul, li, fieldset, form, legend, table, tbody, tr, td
+  margin: 0
+  padding: 0
+  border: 0
+  font-weight: inherit
+  font-style: inherit
+  font-size: 100%
+  font-family: inherit
+  vertical-align: baseline
+
+body
+  line-height: 1.5
+
+table
+  border-collapse: separate
+  border-spacing: 0
+
+td
+  text-align: left
+  font-weight: normal
+
+table, td
+  vertical-align: middle
+
+html
+  font-size: 100.01%
+
+body
+  font-size: 75%
+  color: #222
+  background: #fff
+  background-color: #99CC99
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif
+
+h1, h2
+  font-weight: normal
+  color: #111
+
+h1
+  font-size: 3em
+  line-height: 1
+  margin-bottom: 0.5em
+
+h2
+  font-size: 2em
+  margin-bottom: 0.75em
+
+p
+  margin: 0 0 1.5em
+
+a
+  color: #009
+  text-decoration: underline
+
+  &:focus, &:hover
+    color: #000
+
+ul
+  margin: 0 1.5em 1.5em 0
+  padding-left: 3.333em
+  list-style-type: disc
+
+table
+  margin-bottom: 1.4em
+  width: 100%
+
+td
+  padding: 4px 10px 4px 5px
+
+fieldset
+  padding: 1.4em
+  margin: 0 0 1.5em 0
+  border: 1px solid #ccc
+
+legend
+  font-weight: bold
+  font-size: 1.2em
+
+input[type=text]
+  background-color: #fff
+  border: 1px solid #bbb
+  margin: 0.5em 0
+
+  &:focus
+    border-color: #666
+
+.notice
+  padding: .8em
+  margin-bottom: 1em
+  border: 2px solid #ddd
+  background: #FFF6BF
+  color: #514721
+  border-color: #FFD324
+
+.container
+  width: 913px
+  margin: 0 auto
+
+.column
+  float: left
+  margin-right: 12px
+
+div
+  &.span-1, &.span-3
+    float: left
+    margin-right: 12px
+
+.span-1
+  width: 292px
+
+.span-3, div.span-3
+  width: 900px
+  margin-right: 0
+
+
+.container
+  display: block
+
+  &:after
+    content: "\0020"
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+    overflow: hidden
+
+{% endhighlight%}
+
+Komentarz: Tak jak w przypadku HAML'a , SASS wydaje się być świetnym rozwiązanime. Wyraźnie skraca
+czas tworzenia szablonu stylów, jest równie przejrzysty jak jego odpowiednik, i no i wogóle 
+"cleanly and structurally, with more power than flat CSS allows".
+
+
+
