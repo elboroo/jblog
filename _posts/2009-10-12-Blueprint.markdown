@@ -12,7 +12,7 @@ Elementem godnym szczególnej uwagi jest grid, czyli siatka. Jest to funkcjonaln
 
 Jakie korzyści wynikają z zastosowania frameworka do pisania kodu CSS? Na pewno największa z nich to spora oszczędność czasu. Jeśli nie tworzymy szczególnie skomplikowanej strony, posłużenie się frameworkiem może znacznie przyspieszyć naszą pracę. Framework można jednak równie dobrze wykorzystać w rozbudowanych projektach, używając go jako podstawy do realizacji własnych pomysłów.
 Co nieco można obejrzeć 
-<a href="<a href="http://sigma.inf.ug.edu.pl/~brozek/rails3/tests/index.html">tutaj</a>
+<a href="http://sigma.inf.ug.edu.pl/~brozek/rails3/css/blueprint-css/tests/">tutaj</a>
 
 
 W internecie dostępne są różne frameworki CSS (patrz niżej) , jednak żaden z nich nie oferuje takich możliwości, jak Blueprint. Funkcjonalność zawdzięcza on przede wszystkim zastosowaniu siatki. Tymczasem autorzy większości frameworków CSS operują tym określeniem nieco na wyrost, gdyż są to raczej proste zbiory stylów. A Blueprint to jednak coś więcej.

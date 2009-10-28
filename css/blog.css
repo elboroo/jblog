@@ -113,7 +113,7 @@ pre code {
 }
 
 pre {
-  border-left: 9px solid #FD9945;
+  border-left: 9px dotted #007FFF;
   margin-left: -49px;
   padding: 0 0 0 49px;
 }

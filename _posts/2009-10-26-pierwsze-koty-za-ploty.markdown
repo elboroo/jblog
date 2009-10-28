@@ -44,4 +44,7 @@ Ponadto oceny cząstkowe miały się następująco: <br />
 <li>reszta: oceny A  </li>
 </ul>
 
-## 2
+Stworzoną aplikację wrzuciłem na githuba: 
+<a href="http://github.com/elboroo/kontakty">http://github.com/elboroo/kontakty</a>
+
+## 2. W trakcie realizacji
