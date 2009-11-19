@@ -91,6 +91,8 @@ Użycie skompresowanych JS i CSS jest bardzo proste:
 <%= stylesheet_link_merged :base %>
 <%= javascript_include_merged :base %>
 {% endhighlight  %}
+
+....
 Z tymże trzeba uważać, gdzie umiescic ten drugi wpis, ponieważ Yslow potrafi zrobić awanture, że JS nie znajduje się na koncu pliku. 
 Ocena końcowa Yslow nie zmieniła się (nadal B) i sam nie wiem dlaczego...
 
