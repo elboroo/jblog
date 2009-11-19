@@ -8,6 +8,10 @@ html {
   margin: 0 auto 0 44px; 
 }
 
+body {
+   scrollbar-arrow-color:red;
+}
+
 .site {
   background-color: #FFFFFF;
 }
@@ -113,9 +117,12 @@ pre code {
 }
 
 pre {
-  border-left: 9px dotted #007FFF;
-  margin-left: -49px;
-  padding: 0 0 0 49px;
+  border-left: 9px solid #007FFF;
+  margin-left: -9px;
+  padding: 0 0 0 9px;
+  overflow:auto;
+  width:100%;
+ 
 }
 
 /* tabele */

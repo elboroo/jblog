@@ -12,7 +12,7 @@ Po zaopatrzeniu się w Blueprint'a, przyszła pora na zapoznanie się z narzędz
 Jak widać na załączonym obrazku <br/> 
 ( <a href="http://jdclayton.com/blueprints_compress_a_walkthrough.html">http://jdclayton.com/blueprints_compress_a_walkthrough.html</a> ) jego użycie nie (?) jest trudne. Tak więc moj plik settings.yml wyglada nastepująco:
 
-{% highlight ruby %}
+{% highlight text %}
 
 
 project1:

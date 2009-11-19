@@ -6,24 +6,18 @@ title:  Haml-sass
 Tak prezentuje się (mniej więcej) kod w HAML'u  mojej przykładowej stronki dostępnej 
 <a href="/~brozek/rails3/project1.html">tutaj</a>
 
-{% highlight ruby %}
+{% highlight text %}
 !!! Strict
-%html{ "xml:lang" => "pl", :lang => "pl-pl", 
-	:xmlns => "http://www.w3.org/1999/xhtml" }
+%html{ "xml:lang" => "pl", :lang => "pl-pl",  :xmlns => "http://www.w3.org/1999/xhtml" }
   %head
-    %meta{ :content => "text/html; charset=utf-8", 
-	"http-equiv" => "content-type" }
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "content-type" }
     %title
       {{ page.title }}
     %meta{ :name => "author", :content => "Boguslaw Rozek" }
-    %link{ :href => "http://sigma.inf.ug.edu.pl/~brozek/atom.xml", 
-       :title => "Boguslaw", :rel => "alternate", :type => "application/atom+xml" }
-    %link{ :href => "css/blueprint/screen.css", :rel => "stylesheet", 
-	:type => "text/css", :media => "screen, projection" }
-    %link{ :href => "css/blueprint/ie.css", :rel => "stylesheet", 
-	:type => "text/css", :media => "screen, projection" }
-    %link{ :href => "css/blueprint/print.css", :rel => "stylesheet", 
-	:type => "text/css", :media => "print" }
+    %link{ :href => "http://sigma.inf.ug.edu.pl/~brozek/atom.xml", :title => "Boguslaw", :rel => "alternate", :type => "application/atom+xml" }
+    %link{ :href => "css/blueprint/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
+    %link{ :href => "css/blueprint/ie.css", :rel => "stylesheet", :type => "text/css", :media => "screen, projection" }
+    %link{ :href => "css/blueprint/print.css", :rel => "stylesheet", :type => "text/css", :media => "print" }
   %body
     
 
@@ -100,7 +94,7 @@ koniecznośći domykania tagów to dobrodziejstwo, którym HAML nas obdarza...
 ## SASS - Powerful CSS
 Jeden z CSS'ów widniejących w tagach powyżej, dzięki SASS prezentuje się równie elegancko.
 
-{% highlight ruby %}
+{% highlight text %}
 
 html, body, div, h1, h2, a, ul, li, fieldset, form, legend, table, tbody, tr, td
   margin: 0
